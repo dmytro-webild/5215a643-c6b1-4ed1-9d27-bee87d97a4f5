@@ -46,7 +46,7 @@ export default function LandingPage() {
           tag="Professional Designer"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
-          background={{ variant: "grid" }}
+          background={{ variant: "animated-grid" }}
           buttons={[
             { text: "View My Work", href: "#portfolio" },
             { text: "Get Started", href: "#contact" }
@@ -54,22 +54,22 @@ export default function LandingPage() {
           buttonAnimation="slide-up"
           carouselItems={[
             {
-              id: "1",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-stunning-modern-e-commerce-website-des-1772566668134-fb1e4245.png?_wi=1",              imageAlt: "E-commerce website design"
+              id: "1",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-stunning-modern-e-commerce-website-des-1772566668134-fb1e4245.png",              imageAlt: "E-commerce website design"
             },
             {
-              id: "2",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=1",              imageAlt: "Corporate website design"
+              id: "2",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png",              imageAlt: "Corporate website design"
             },
             {
-              id: "3",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-creative-agency-website-design-with-bo-1772566669671-c480d904.png?_wi=1",              imageAlt: "Creative agency website"
+              id: "3",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-creative-agency-website-design-with-bo-1772566669671-c480d904.png",              imageAlt: "Creative agency website"
             },
             {
-              id: "4",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sophisticated-saas-platform-landing-pa-1772566668752-9737873c.png?_wi=1",              imageAlt: "SaaS platform design"
+              id: "4",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sophisticated-saas-platform-landing-pa-1772566668752-9737873c.png",              imageAlt: "SaaS platform design"
             },
             {
-              id: "5",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-vibrant-fashion-brand-website-design-w-1772566668475-3b90a44d.png?_wi=1",              imageAlt: "Fashion brand website"
+              id: "5",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-vibrant-fashion-brand-website-design-w-1772566668475-3b90a44d.png",              imageAlt: "Fashion brand website"
             },
             {
-              id: "6",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-professional-consulting-firm-website-d-1772566668764-39fb77be.png?_wi=1",              imageAlt: "Consulting website design"
+              id: "6",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-professional-consulting-firm-website-d-1772566668764-39fb77be.png",              imageAlt: "Consulting website design"
             }
           ]}
           autoPlay={true}
@@ -90,22 +90,22 @@ export default function LandingPage() {
           animationType="slide-up"
           products={[
             {
-              id: "1",              name: "E-Commerce Platform",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-stunning-modern-e-commerce-website-des-1772566668134-fb1e4245.png?_wi=2",              imageAlt: "E-commerce platform design"
+              id: "1",              name: "E-Commerce Platform",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-stunning-modern-e-commerce-website-des-1772566668134-fb1e4245.png",              imageAlt: "E-commerce platform design"
             },
             {
-              id: "2",              name: "Corporate Website",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=2",              imageAlt: "Corporate website design"
+              id: "2",              name: "Corporate Website",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png",              imageAlt: "Corporate website design"
             },
             {
-              id: "3",              name: "Creative Agency Site",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-creative-agency-website-design-with-bo-1772566669671-c480d904.png?_wi=2",              imageAlt: "Creative agency website"
+              id: "3",              name: "Creative Agency Site",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-creative-agency-website-design-with-bo-1772566669671-c480d904.png",              imageAlt: "Creative agency website"
             },
             {
-              id: "4",              name: "SaaS Platform",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sophisticated-saas-platform-landing-pa-1772566668752-9737873c.png?_wi=2",              imageAlt: "SaaS platform design"
+              id: "4",              name: "SaaS Platform",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sophisticated-saas-platform-landing-pa-1772566668752-9737873c.png",              imageAlt: "SaaS platform design"
             },
             {
-              id: "5",              name: "Fashion Brand",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-vibrant-fashion-brand-website-design-w-1772566668475-3b90a44d.png?_wi=2",              imageAlt: "Fashion brand website"
+              id: "5",              name: "Fashion Brand",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-vibrant-fashion-brand-website-design-w-1772566668475-3b90a44d.png",              imageAlt: "Fashion brand website"
             },
             {
-              id: "6",              name: "Consulting Firm",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-professional-consulting-firm-website-d-1772566668764-39fb77be.png?_wi=2",              imageAlt: "Consulting website design"
+              id: "6",              name: "Consulting Firm",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-professional-consulting-firm-website-d-1772566668764-39fb77be.png",              imageAlt: "Consulting website design"
             }
           ]}
         />
@@ -126,7 +126,7 @@ export default function LandingPage() {
             },
             {
               id: 2,
-              tag: "Development",              title: "Responsive Development",              subtitle: "Websites that work seamlessly across all devices.",              description: "Responsive design ensures your website looks and functions flawlessly on desktop, tablet, and mobile. I use modern technologies and best practices to deliver fast, secure, and SEO-optimized websites.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=3",              imageAlt: "Responsive development"
+              tag: "Development",              title: "Responsive Development",              subtitle: "Websites that work seamlessly across all devices.",              description: "Responsive design ensures your website looks and functions flawlessly on desktop, tablet, and mobile. I use modern technologies and best practices to deliver fast, secure, and SEO-optimized websites.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png",              imageAlt: "Responsive development"
             },
             {
               id: 3,
@@ -178,7 +178,7 @@ export default function LandingPage() {
             { text: "Call: +49 176 61169654", href: "tel:+49176611696541" }
           ]}
           buttonAnimation="slide-up"
-          background={{ variant: "grid" }}
+          background={{ variant: "animated-grid" }}
           useInvertedBackground={false}
         />
       </div>
