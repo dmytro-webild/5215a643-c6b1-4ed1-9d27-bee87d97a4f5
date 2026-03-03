@@ -140,6 +140,7 @@ export default function LandingPage() {
         <AboutMetric
           title="I'm a passionate web designer dedicated to creating digital experiences that inspire and convert. With expertise in modern web design trends, user experience, and digital strategy, I help brands establish a powerful online presence."
           useInvertedBackground={false}
+          metricsAnimation="slide-up"
           metrics={[
             { icon: Zap, label: "Projects Completed", value: "50+" },
             { icon: Users, label: "Happy Clients", value: "30+" },
