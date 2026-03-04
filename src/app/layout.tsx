@@ -1,53 +1,21 @@
 import type { Metadata } from "next";
-import { Public_Sans } from "next/font/google";
 import { Inter } from "next/font/google";
+import "./styles/variables.css";
 import "./globals.css";
-import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
 
-const publicSans = Public_Sans({
-  variable: "--font-public-sans",  subsets: ["latin"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Christian Friis - Web Designer | Professional Design Solutions",  description: "Award-winning web designer creating stunning, responsive websites that convert. Expertise in UI/UX design, web development, and digital strategy. Based in Germany.",  keywords: "web designer, web design, UI design, UX design, website designer, professional web designer, responsive design, digital design",  metadataBase: new URL("https://christianfriis.com"),
-  alternates: {
-    canonical: "https://christianfriis.com"
-  },
-  openGraph: {
-    title: "Christian Friis - Web Designer",    description: "Creating beautiful, functional websites that drive results. Professional web design solutions for businesses of all sizes.",    url: "https://christianfriis.com",    siteName: "Christian Friis",    type: "website",    images: [
-      {
-        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-modern-designer-s-workspace-with-a-cle-1772566667699-d70c5a04.png",        alt: "Christian Friis - Web Designer Portfolio"
-      }
-    ]
-  },
-  twitter: {
-    card: "summary_large_image",    title: "Christian Friis - Web Designer",    description: "Award-winning web design solutions for modern businesses",    images: ["https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-modern-designer-s-workspace-with-a-cle-1772566667699-d70c5a04.png"]
-  },
-  robots: {
-    index: true,
-    follow: true
-  }
-};
+  title: "Christian Friis - Web Designer",  description: "Professional web designer creating stunning digital experiences"};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <ServiceWrapper>
-        <body
-          className={`${publicSans.variable} ${inter.variable} antialiased`}
-        >
-          <Tag />
-          {children}
-        
+    <html lang="en">
+      <body className={inter.className}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1415,7 +1383,6 @@ export default function RootLayout({
           }}
         />
       </body>
-      </ServiceWrapper>
     </html>
   );
 }
