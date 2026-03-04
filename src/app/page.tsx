@@ -5,11 +5,9 @@ import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/Nav
 import HeroBillboardRotatedCarousel from '@/components/sections/hero/HeroBillboardRotatedCarousel';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNineteen';
-import AboutMetric from '@/components/sections/about/AboutMetric';
-import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-import { Sparkles, Briefcase, Zap, Users, TrendingUp, Award, Mail } from 'lucide-react';
+import { Sparkles, Briefcase, Zap, Mail } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -31,7 +29,6 @@ export default function LandingPage() {
           navItems={[
             { name: "Work", id: "portfolio" },
             { name: "Services", id: "services" },
-            { name: "About", id: "about" },
             { name: "Contact", id: "contact" }
           ]}
           bottomLeftText="Web Designer"
@@ -136,37 +133,6 @@ export default function LandingPage() {
         />
       </div>
 
-      <div id="about" data-section="about">
-        <AboutMetric
-          title="I'm a passionate web designer dedicated to creating digital experiences that inspire and convert. With expertise in modern web design trends, user experience, and digital strategy, I help brands establish a powerful online presence."
-          useInvertedBackground={false}
-          metricsAnimation="slide-up"
-          metrics={[
-            { icon: Zap, label: "Projects Completed", value: "50+" },
-            { icon: Users, label: "Happy Clients", value: "30+" },
-            { icon: TrendingUp, label: "Years Experience", value: "2" },
-            { icon: Award, label: "Design Awards", value: "8" }
-          ]}
-        />
-      </div>
-
-      <div id="testimonials" data-section="testimonials">
-        <TestimonialCardFifteen
-          testimonial="Christian's web design expertise transformed our online presence. His attention to detail, creative vision, and collaborative approach made the entire process smooth and enjoyable. Our website has become a powerful business asset."
-          rating={5}
-          author="Sarah Mitchell, CEO - TechFlow"
-          ratingAnimation="slide-up"
-          avatarsAnimation="slide-up"
-          useInvertedBackground={false}
-          avatars={[
-            { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/professional-headshot-portrait-of-a-busi-1772566666692-7dbdb570.png", alt: "Sarah Mitchell" },
-            { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/professional-headshot-portrait-of-a-crea-1772566668076-76e214eb.png", alt: "John Davis" },
-            { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/professional-headshot-portrait-of-a-fema-1772566667828-5111d03b.png", alt: "Emily Rodriguez" },
-            { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/professional-headshot-portrait-of-a-male-1772566668212-bf31db96.png", alt: "Michael Chen" }
-          ]}
-        />
-      </div>
-
       <div id="contact" data-section="contact">
         <ContactCTA
           tag="Let's Work Together"
@@ -191,8 +157,7 @@ export default function LandingPage() {
             {
               items: [
                 { label: "Work", href: "#portfolio" },
-                { label: "Services", href: "#services" },
-                { label: "About", href: "#about" }
+                { label: "Services", href: "#services" }
               ]
             },
             {

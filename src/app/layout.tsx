@@ -6,7 +6,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Christian Friis - Web Designer",  description: "Professional web designer creating stunning digital experiences"};
+  title: "Christian Friis - Web Designer",  description: "Professional web designer creating stunning digital experiences"
+};
 
 export default function RootLayout({
   children,
