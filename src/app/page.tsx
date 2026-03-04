@@ -120,7 +120,7 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              tag: "Design",              title: "Web Design",              subtitle: "Beautiful, intuitive interfaces that engage users.",              description: "I create custom web designs that reflect your brand identity and captivate your audience. From concept to execution, every pixel is carefully crafted for optimal user experience and visual impact.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-modern-designer-s-workspace-with-a-cle-1772566667699-d70c5a04.png",              imageAlt: "Web design workspace"
+              tag: "Design",              title: "Web Design",              subtitle: "Beautiful, intuitive interfaces that engage users.",              description: "I create custom web designs that reflect your brand identity and captivate your audience. From concept to execution, every pixel is carefully crafted for optimal user experience and visual impact.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-modern-designer-s-workspace-with-a-cle-1772566667699-d70c5a04.png?_wi=1",              imageAlt: "Web design workspace"
             },
             {
               id: 2,
@@ -146,7 +146,7 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              tag: "Recommended",              title: "Deploy on Vercel",              subtitle: "Fastest way to deploy Next.js projects.",              description: "1. Push your code to GitHub\n2. Sign up at vercel.com\n3. Connect your repository\n4. Vercel auto-detects Next.js and deploys automatically\n5. Your site is live instantly with automatic SSL and CDN",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-modern-designer-s-workspace-with-a-cle-1772566667699-d70c5a04.png",              imageAlt: "Vercel deployment"
+              tag: "Recommended",              title: "Deploy on Vercel",              subtitle: "Fastest way to deploy Next.js projects.",              description: "1. Push your code to GitHub\n2. Sign up at vercel.com\n3. Connect your repository\n4. Vercel auto-detects Next.js and deploys automatically\n5. Your site is live instantly with automatic SSL and CDN",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-modern-designer-s-workspace-with-a-cle-1772566667699-d70c5a04.png?_wi=2",              imageAlt: "Vercel deployment"
             },
             {
               id: 2,
