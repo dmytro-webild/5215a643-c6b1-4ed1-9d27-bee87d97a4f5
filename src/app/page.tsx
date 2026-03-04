@@ -144,7 +144,7 @@ export default function LandingPage() {
           metrics={[
             { icon: Zap, label: "Projects Completed", value: "50+" },
             { icon: Users, label: "Happy Clients", value: "30+" },
-            { icon: TrendingUp, label: "Years Experience", value: "5+" },
+            { icon: TrendingUp, label: "Years Experience", value: "2" },
             { icon: Award, label: "Design Awards", value: "8" }
           ]}
         />
