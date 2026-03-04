@@ -169,7 +169,7 @@ export default function LandingPage() {
           description="Let's collaborate to create a website that not only looks stunning but also drives results. I'm excited to bring your vision to life."
           buttons={[
             { text: "Contact Me", href: "mailto:friisp@gmail.com" },
-            { text: "Call: +49 176 61169654", href: "tel:+49176611696541" }
+            { text: "Call: +49 179 2355413", href: "tel:+49176611696541" }
           ]}
           buttonAnimation="slide-up"
           background={{ variant: "animated-grid" }}
