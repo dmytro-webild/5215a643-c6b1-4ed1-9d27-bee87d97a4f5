@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Peter Friis - Web Designer",  description: "Professional web designer creating stunning digital experiences. Deploy your site easily with Next.js, Vercel, or any Node.js hosting platform."
+  title: "Peter Friis - Webdesigner",  description: "Professioneller Webdesigner, der atemberaubende digitale Erlebnisse schafft. Stellen Sie Ihre Website mit Next.js, Vercel oder einer beliebigen Node.js-Hosting-Plattform bereit."
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="de">
       <head>
         <script>
           {`
@@ -24,44 +24,44 @@ export default function RootLayout({
                 {
                   name: 'Vercel',
                   steps: [
-                    '1. Push your code to GitHub',
-                    '2. Go to vercel.com and sign up',
-                    '3. Click "New Project" and select your repository',
-                    '4. Vercel auto-detects Next.js and deploys automatically',
-                    '5. Your site is live at vercel.app domain'
+                    '1. Schieben Sie Ihren Code zu GitHub',
+                    '2. Gehen Sie zu vercel.com und registrieren Sie sich',
+                    '3. Klicken Sie auf "Neues Projekt" und wählen Sie Ihr Repository',
+                    '4. Vercel erkennt Next.js automatisch und stellt bereit',
+                    '5. Ihre Website ist live auf der vercel.app-Domain'
                   ]
                 },
                 {
                   name: 'Netlify',
                   steps: [
-                    '1. Push your code to GitHub',
-                    '2. Go to netlify.com and sign up',
-                    '3. Click "New site from Git" and select your repository',
-                    '4. Set build command: npm run build',
-                    '5. Set publish directory: .next/standalone',
-                    '6. Deploy and get your live domain'
+                    '1. Schieben Sie Ihren Code zu GitHub',
+                    '2. Gehen Sie zu netlify.com und registrieren Sie sich',
+                    '3. Klicken Sie auf "Neue Website aus Git" und wählen Sie Ihr Repository',
+                    '4. Build-Befehl festlegen: npm run build',
+                    '5. Veröffentlichungsverzeichnis festlegen: .next/standalone',
+                    '6. Stellen Sie bereit und erhalten Sie Ihre Live-Domain'
                   ]
                 },
                 {
                   name: 'Self-Hosted (Node.js)',
                   steps: [
-                    '1. Get a server (Digital Ocean, AWS, etc)',
-                    '2. Clone your repository on the server',
-                    '3. Run: npm install && npm run build',
-                    '4. Set NODE_ENV=production',
-                    '5. Start with: npm start or use PM2',
-                    '6. Set up nginx/Apache as reverse proxy',
-                    '7. Configure your domain DNS'
+                    '1. Holen Sie sich einen Server (Digital Ocean, AWS, etc)',
+                    '2. Klonen Sie Ihr Repository auf dem Server',
+                    '3. Ausführen: npm install && npm run build',
+                    '4. NODE_ENV=production festlegen',
+                    '5. Starten Sie mit: npm start oder verwenden Sie PM2',
+                    '6. Richten Sie nginx/Apache als Reverse-Proxy ein',
+                    '7. Konfigurieren Sie Ihre Domain-DNS'
                   ]
                 },
                 {
-                  name: 'Docker Deployment',
+                  name: 'Docker-Bereitstellung',
                   steps: [
-                    '1. Create a Dockerfile in your project root',
-                    '2. Build image: docker build -t myapp .',
-                    '3. Run container: docker run -p 3000:3000 myapp',
-                    '4. Push to Docker Hub or container registry',
-                    '5. Deploy to cloud platforms (AWS ECS, GCP, etc)'
+                    '1. Erstellen Sie ein Dockerfile im Projektstammverzeichnis',
+                    '2. Image erstellen: docker build -t myapp .',
+                    '3. Container ausführen: docker run -p 3000:3000 myapp',
+                    '4. Zu Docker Hub oder Container-Registry pushen',
+                    '5. Auf Cloud-Plattformen bereitstellen (AWS ECS, GCP, etc)'
                   ]
                 }
               ],
@@ -71,14 +71,14 @@ export default function RootLayout({
                 'DATABASE_URL=your-database-url'
               ],
               postDeploymentChecklist: [
-                'Test all navigation links',
-                'Verify responsive design on mobile',
-                'Check email forms work correctly',
-                'Confirm images load properly',
-                'Test contact forms submission',
-                'Verify SEO meta tags',
-                'Check page load performance',
-                'Set up SSL certificate (HTTPS)'
+                'Alle Navigationslinks testen',
+                'Responsives Design auf Mobilgeräten überprüfen',
+                'Überprüfen Sie, ob E-Mail-Formulare ordnungsgemäß funktionieren',
+                'Bestätigen Sie, dass Bilder ordnungsgemäß geladen werden',
+                'Kontaktformulare-Übermittlung testen',
+                'SEO-Meta-Tags überprüfen',
+                'Seitenladegeschwindigkeit überprüfen',
+                'SSL-Zertifikat einrichten (HTTPS)'
               ]
             };
           `}
