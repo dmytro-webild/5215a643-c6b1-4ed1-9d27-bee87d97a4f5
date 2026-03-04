@@ -7,25 +7,9 @@ import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNineteen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-import { Sparkles, Briefcase, Zap, Mail } from 'lucide-react';
+import { Sparkles, Briefcase, Zap, Mail, Code, Rocket, CheckCircle } from 'lucide-react';
 
 export default function LandingPage() {
-  const handleButtonClick = (href: string) => {
-    if (href.startsWith('#')) {
-      // Internal anchor link
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else if (href.startsWith('mailto:') || href.startsWith('tel:')) {
-      // Email or phone link
-      window.location.href = href;
-    } else if (href.startsWith('http')) {
-      // External link
-      window.open(href, '_blank');
-    }
-  };
-
   return (
     <ThemeProvider
       defaultButtonVariant="expand-hover"
@@ -45,6 +29,7 @@ export default function LandingPage() {
           navItems={[
             { name: "Work", id: "portfolio" },
             { name: "Services", id: "services" },
+            { name: "Deployment", id: "deployment" },
             { name: "Contact", id: "contact" }
           ]}
           bottomLeftText="Web Designer"
@@ -61,8 +46,8 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           background={{ variant: "animated-grid" }}
           buttons={[
-            { text: "View My Work", onClick: () => handleButtonClick('#portfolio') },
-            { text: "Get Started", onClick: () => handleButtonClick('#contact') }
+            { text: "View My Work", href: "#portfolio" },
+            { text: "Get Started", href: "#contact" }
           ]}
           buttonAnimation="slide-up"
           carouselItems={[
@@ -149,6 +134,32 @@ export default function LandingPage() {
         />
       </div>
 
+      <div id="deployment" data-section="deployment">
+        <FeatureCardNineteen
+          title="How to Deploy Your Site"
+          description="Multiple deployment options to get your website live quickly and reliably."
+          tag="Deployment Guide"
+          tagIcon={Rocket}
+          tagAnimation="slide-up"
+          textboxLayout="default"
+          useInvertedBackground={false}
+          features={[
+            {
+              id: 1,
+              tag: "Recommended",              title: "Deploy on Vercel",              subtitle: "Fastest way to deploy Next.js projects.",              description: "1. Push your code to GitHub\n2. Sign up at vercel.com\n3. Connect your repository\n4. Vercel auto-detects Next.js and deploys automatically\n5. Your site is live instantly with automatic SSL and CDN",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-modern-designer-s-workspace-with-a-cle-1772566667699-d70c5a04.png",              imageAlt: "Vercel deployment"
+            },
+            {
+              id: 2,
+              tag: "Alternative",              title: "Deploy on Netlify",              subtitle: "Great alternative with easy GitHub integration.",              description: "1. Push code to GitHub\n2. Sign up at netlify.com\n3. Select 'New site from Git'\n4. Build command: npm run build\n5. Publish directory: .next/standalone\n6. Deploy and get your domain",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=3",              imageAlt: "Netlify deployment"
+            },
+            {
+              id: 3,
+              tag: "Self-Hosted",              title: "Deploy with Docker",              subtitle: "Deploy anywhere with containerization.",              description: "1. Create Dockerfile in project root\n2. Build image: docker build -t myapp .\n3. Run: docker run -p 3000:3000 myapp\n4. Push to Docker Hub\n5. Deploy to AWS ECS, Google Cloud, or DigitalOcean"
+            }
+          ]}
+        />
+      </div>
+
       <div id="contact" data-section="contact">
         <ContactCTA
           tag="Let's Work Together"
@@ -157,8 +168,8 @@ export default function LandingPage() {
           title="Ready to Elevate Your Online Presence?"
           description="Let's collaborate to create a website that not only looks stunning but also drives results. I'm excited to bring your vision to life."
           buttons={[
-            { text: "Contact Me", onClick: () => handleButtonClick('mailto:friischristian35@gmail.com') },
-            { text: "Call: +49 176 61169654", onClick: () => handleButtonClick('tel:+49176611696541') }
+            { text: "Contact Me", href: "mailto:friischristian35@gmail.com" },
+            { text: "Call: +49 176 61169654", href: "tel:+49176611696541" }
           ]}
           buttonAnimation="slide-up"
           background={{ variant: "animated-grid" }}
@@ -172,14 +183,15 @@ export default function LandingPage() {
           columns={[
             {
               items: [
-                { label: "Work", onClick: () => handleButtonClick('#portfolio') },
-                { label: "Services", onClick: () => handleButtonClick('#services') }
+                { label: "Work", href: "#portfolio" },
+                { label: "Services", href: "#services" },
+                { label: "Deployment", href: "#deployment" }
               ]
             },
             {
               items: [
-                { label: "Email", onClick: () => handleButtonClick('mailto:friischristian35@gmail.com') },
-                { label: "Phone", onClick: () => handleButtonClick('tel:+49176611696541') },
+                { label: "Email", href: "mailto:friischristian35@gmail.com" },
+                { label: "Phone", href: "tel:+49176611696541" },
                 { label: "LinkedIn", href: "#" }
               ]
             },
