@@ -10,6 +10,22 @@ import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis'
 import { Sparkles, Briefcase, Zap, Mail } from 'lucide-react';
 
 export default function LandingPage() {
+  const handleButtonClick = (href: string) => {
+    if (href.startsWith('#')) {
+      // Internal anchor link
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else if (href.startsWith('mailto:') || href.startsWith('tel:')) {
+      // Email or phone link
+      window.location.href = href;
+    } else if (href.startsWith('http')) {
+      // External link
+      window.open(href, '_blank');
+    }
+  };
+
   return (
     <ThemeProvider
       defaultButtonVariant="expand-hover"
@@ -45,8 +61,8 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           background={{ variant: "animated-grid" }}
           buttons={[
-            { text: "View My Work", href: "#portfolio" },
-            { text: "Get Started", href: "#contact" }
+            { text: "View My Work", onClick: () => handleButtonClick('#portfolio') },
+            { text: "Get Started", onClick: () => handleButtonClick('#contact') }
           ]}
           buttonAnimation="slide-up"
           carouselItems={[
@@ -141,8 +157,8 @@ export default function LandingPage() {
           title="Ready to Elevate Your Online Presence?"
           description="Let's collaborate to create a website that not only looks stunning but also drives results. I'm excited to bring your vision to life."
           buttons={[
-            { text: "Contact Me", href: "mailto:friischristian35@gmail.com" },
-            { text: "Call: +49 176 61169654", href: "tel:+49176611696541" }
+            { text: "Contact Me", onClick: () => handleButtonClick('mailto:friischristian35@gmail.com') },
+            { text: "Call: +49 176 61169654", onClick: () => handleButtonClick('tel:+49176611696541') }
           ]}
           buttonAnimation="slide-up"
           background={{ variant: "animated-grid" }}
@@ -156,14 +172,14 @@ export default function LandingPage() {
           columns={[
             {
               items: [
-                { label: "Work", href: "#portfolio" },
-                { label: "Services", href: "#services" }
+                { label: "Work", onClick: () => handleButtonClick('#portfolio') },
+                { label: "Services", onClick: () => handleButtonClick('#services') }
               ]
             },
             {
               items: [
-                { label: "Email", href: "mailto:friischristian35@gmail.com" },
-                { label: "Phone", href: "tel:+49176611696541" },
+                { label: "Email", onClick: () => handleButtonClick('mailto:friischristian35@gmail.com') },
+                { label: "Phone", onClick: () => handleButtonClick('tel:+49176611696541') },
                 { label: "LinkedIn", href: "#" }
               ]
             },
