@@ -25,7 +25,7 @@ export default function LandingPage() {
     >
       <div id="nav" data-section="nav">
         <NavbarStyleFullscreen
-          brandName="Christian Friis"
+          brandName="Peter Friis"
           navItems={[
             { name: "Work", id: "portfolio" },
             { name: "Services", id: "services" },
@@ -33,7 +33,7 @@ export default function LandingPage() {
             { name: "Contact", id: "contact" }
           ]}
           bottomLeftText="Web Designer"
-          bottomRightText="friischristian35@gmail.com"
+          bottomRightText="friisp@gmail.com"
         />
       </div>
 
@@ -168,7 +168,7 @@ export default function LandingPage() {
           title="Ready to Elevate Your Online Presence?"
           description="Let's collaborate to create a website that not only looks stunning but also drives results. I'm excited to bring your vision to life."
           buttons={[
-            { text: "Contact Me", href: "mailto:friischristian35@gmail.com" },
+            { text: "Contact Me", href: "mailto:friisp@gmail.com" },
             { text: "Call: +49 176 61169654", href: "tel:+49176611696541" }
           ]}
           buttonAnimation="slide-up"
@@ -179,7 +179,7 @@ export default function LandingPage() {
 
       <div id="footer" data-section="footer">
         <FooterLogoEmphasis
-          logoText="Christian Friis"
+          logoText="Peter Friis"
           columns={[
             {
               items: [
@@ -190,7 +190,7 @@ export default function LandingPage() {
             },
             {
               items: [
-                { label: "Email", href: "mailto:friischristian35@gmail.com" },
+                { label: "Email", href: "mailto:friisp@gmail.com" },
                 { label: "Phone", href: "tel:+49176611696541" },
                 { label: "LinkedIn", href: "#" }
               ]

@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Christian Friis - Web Designer",  description: "Professional web designer creating stunning digital experiences. Deploy your site easily with Next.js, Vercel, or any Node.js hosting platform."
+  title: "Peter Friis - Web Designer",  description: "Professional web designer creating stunning digital experiences. Deploy your site easily with Next.js, Vercel, or any Node.js hosting platform."
 };
 
 export default function RootLayout({
