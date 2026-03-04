@@ -33,7 +33,7 @@ export default function LandingPage() {
             { name: "Kontakt", id: "contact" }
           ]}
           bottomLeftText="Webdesigner"
-          bottomRightText="friisp@gmail.com"
+          bottomRightText="peteralexanderfriis696@gmail.com"
         />
       </div>
 
@@ -168,7 +168,7 @@ export default function LandingPage() {
           title="Bereit, Ihre Online-Präsenz zu verbessern?"
           description="Lassen Sie uns zusammenarbeiten, um eine Website zu schaffen, die nicht nur atemberaubend aussieht, sondern auch Ergebnisse liefert. Ich freue mich darauf, Ihre Vision zum Leben zu erwecken."
           buttons={[
-            { text: "Kontaktieren Sie mich", href: "mailto:friisp@gmail.com" },
+            { text: "Kontaktieren Sie mich", href: "mailto:peteralexanderfriis696@gmail.com" },
             { text: "Anrufen: +49 179 2355413", href: "tel:+49176611696541" }
           ]}
           buttonAnimation="slide-up"
@@ -190,7 +190,7 @@ export default function LandingPage() {
             },
             {
               items: [
-                { label: "E-Mail", href: "mailto:friisp@gmail.com" },
+                { label: "E-Mail", href: "mailto:peteralexanderfriis696@gmail.com" },
                 { label: "Telefon", href: "tel:+49176611696541" },
                 { label: "LinkedIn", href: "#" }
               ]
