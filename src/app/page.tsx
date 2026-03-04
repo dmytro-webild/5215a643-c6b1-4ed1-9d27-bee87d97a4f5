@@ -27,47 +27,47 @@ export default function LandingPage() {
         <NavbarStyleFullscreen
           brandName="Peter Friis"
           navItems={[
-            { name: "Work", id: "portfolio" },
-            { name: "Services", id: "services" },
-            { name: "Deployment", id: "deployment" },
-            { name: "Contact", id: "contact" }
+            { name: "Arbeiten", id: "portfolio" },
+            { name: "Dienstleistungen", id: "services" },
+            { name: "Bereitstellung", id: "deployment" },
+            { name: "Kontakt", id: "contact" }
           ]}
-          bottomLeftText="Web Designer"
+          bottomLeftText="Webdesigner"
           bottomRightText="friisp@gmail.com"
         />
       </div>
 
       <div id="hero" data-section="hero">
         <HeroBillboardRotatedCarousel
-          title="Web Design That Captivates"
-          description="I create stunning, user-centric websites that blend beautiful design with seamless functionality. Let's transform your vision into a digital experience that converts."
-          tag="Professional Designer"
+          title="Webdesign, das fesselt"
+          description="Ich erstelle atemberaubende, benutzerorientierte Websites, die schönes Design mit nahtloser Funktionalität verbinden. Lassen Sie uns Ihre Vision in ein digitales Erlebnis umwandeln, das konvertiert."
+          tag="Professioneller Designer"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           background={{ variant: "animated-grid" }}
           buttons={[
-            { text: "View My Work", href: "#portfolio" },
-            { text: "Get Started", href: "#contact" }
+            { text: "Meine Arbeiten ansehen", href: "#portfolio" },
+            { text: "Erste Schritte", href: "#contact" }
           ]}
           buttonAnimation="slide-up"
           carouselItems={[
             {
-              id: "1",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-stunning-modern-e-commerce-website-des-1772566668134-fb1e4245.png?_wi=1",              imageAlt: "E-commerce website design"
+              id: "1",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-stunning-modern-e-commerce-website-des-1772566668134-fb1e4245.png?_wi=1",              imageAlt: "E-Commerce-Website-Design"
             },
             {
-              id: "2",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=1",              imageAlt: "Corporate website design"
+              id: "2",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=1",              imageAlt: "Corporate-Website-Design"
             },
             {
-              id: "3",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-creative-agency-website-design-with-bo-1772566669671-c480d904.png?_wi=1",              imageAlt: "Creative agency website"
+              id: "3",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-creative-agency-website-design-with-bo-1772566669671-c480d904.png?_wi=1",              imageAlt: "Kreative Agentur-Website"
             },
             {
-              id: "4",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sophisticated-saas-platform-landing-pa-1772566668752-9737873c.png?_wi=1",              imageAlt: "SaaS platform design"
+              id: "4",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sophisticated-saas-platform-landing-pa-1772566668752-9737873c.png?_wi=1",              imageAlt: "SaaS-Plattform-Design"
             },
             {
-              id: "5",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-vibrant-fashion-brand-website-design-w-1772566668475-3b90a44d.png?_wi=1",              imageAlt: "Fashion brand website"
+              id: "5",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-vibrant-fashion-brand-website-design-w-1772566668475-3b90a44d.png?_wi=1",              imageAlt: "Modemarken-Website"
             },
             {
-              id: "6",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-professional-consulting-firm-website-d-1772566668764-39fb77be.png?_wi=1",              imageAlt: "Consulting website design"
+              id: "6",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-professional-consulting-firm-website-d-1772566668764-39fb77be.png?_wi=1",              imageAlt: "Beratungsfirmen-Website-Design"
             }
           ]}
           autoPlay={true}
@@ -77,8 +77,8 @@ export default function LandingPage() {
 
       <div id="portfolio" data-section="portfolio">
         <ProductCardOne
-          title="Featured Work"
-          description="A selection of my recent web design projects showcasing diverse industries and design approaches."
+          title="Ausgewählte Arbeiten"
+          description="Eine Auswahl meiner jüngsten Webdesign-Projekte, die verschiedene Branchen und Designansätze zeigen."
           tag="Portfolio"
           tagIcon={Briefcase}
           tagAnimation="slide-up"
@@ -88,22 +88,22 @@ export default function LandingPage() {
           animationType="slide-up"
           products={[
             {
-              id: "1",              name: "E-Commerce Platform",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-stunning-modern-e-commerce-website-des-1772566668134-fb1e4245.png?_wi=2",              imageAlt: "E-commerce platform design"
+              id: "1",              name: "E-Commerce-Plattform",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-stunning-modern-e-commerce-website-des-1772566668134-fb1e4245.png?_wi=2",              imageAlt: "E-Commerce-Plattform-Design"
             },
             {
-              id: "2",              name: "Corporate Website",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=2",              imageAlt: "Corporate website design"
+              id: "2",              name: "Corporate-Website",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=2",              imageAlt: "Corporate-Website-Design"
             },
             {
-              id: "3",              name: "Creative Agency Site",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-creative-agency-website-design-with-bo-1772566669671-c480d904.png?_wi=2",              imageAlt: "Creative agency website"
+              id: "3",              name: "Kreative Agentur-Website",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-creative-agency-website-design-with-bo-1772566669671-c480d904.png?_wi=2",              imageAlt: "Kreative Agentur-Website"
             },
             {
-              id: "4",              name: "SaaS Platform",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sophisticated-saas-platform-landing-pa-1772566668752-9737873c.png?_wi=2",              imageAlt: "SaaS platform design"
+              id: "4",              name: "SaaS-Plattform",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sophisticated-saas-platform-landing-pa-1772566668752-9737873c.png?_wi=2",              imageAlt: "SaaS-Plattform-Design"
             },
             {
-              id: "5",              name: "Fashion Brand",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-vibrant-fashion-brand-website-design-w-1772566668475-3b90a44d.png?_wi=2",              imageAlt: "Fashion brand website"
+              id: "5",              name: "Modemarke",              price: "2023",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-vibrant-fashion-brand-website-design-w-1772566668475-3b90a44d.png?_wi=2",              imageAlt: "Modemarken-Website"
             },
             {
-              id: "6",              name: "Consulting Firm",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-professional-consulting-firm-website-d-1772566668764-39fb77be.png?_wi=2",              imageAlt: "Consulting website design"
+              id: "6",              name: "Beratungsfirma",              price: "2024",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-professional-consulting-firm-website-d-1772566668764-39fb77be.png?_wi=2",              imageAlt: "Beratungsfirmen-Website-Design"
             }
           ]}
         />
@@ -111,24 +111,24 @@ export default function LandingPage() {
 
       <div id="services" data-section="services">
         <FeatureCardNineteen
-          title="My Services"
-          description="End-to-end web design solutions tailored to your business goals and brand identity."
-          tag="What I Offer"
+          title="Meine Dienstleistungen"
+          description="End-to-End-Webdesign-Lösungen, zugeschnitten auf Ihre Geschäftsziele und Markenidentität."
+          tag="Was ich anbiete"
           tagAnimation="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
           features={[
             {
               id: 1,
-              tag: "Design",              title: "Web Design",              subtitle: "Beautiful, intuitive interfaces that engage users.",              description: "I create custom web designs that reflect your brand identity and captivate your audience. From concept to execution, every pixel is carefully crafted for optimal user experience and visual impact.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-modern-designer-s-workspace-with-a-cle-1772566667699-d70c5a04.png?_wi=1",              imageAlt: "Web design workspace"
+              tag: "Design",              title: "Webdesign",              subtitle: "Schöne, intuitive Schnittstellen, die Benutzer ansprechen.",              description: "Ich erstelle benutzerdefinierte Webdesigns, die Ihre Markenidentität widerspiegeln und Ihr Publikum fesseln. Von der Konzeption bis zur Ausführung ist jedes Pixel sorgfältig für optimale Benutzererfahrung und visuellen Effekt gestaltet.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-modern-designer-s-workspace-with-a-cle-1772566667699-d70c5a04.png?_wi=1",              imageAlt: "Webdesign-Arbeitsbereich"
             },
             {
               id: 2,
-              tag: "Development",              title: "Responsive Development",              subtitle: "Websites that work seamlessly across all devices.",              description: "Responsive design ensures your website looks and functions flawlessly on desktop, tablet, and mobile. I use modern technologies and best practices to deliver fast, secure, and SEO-optimized websites.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=3",              imageAlt: "Responsive development"
+              tag: "Entwicklung",              title: "Responsive-Entwicklung",              subtitle: "Websites, die auf allen Geräten nahtlos funktionieren.",              description: "Responsives Design stellt sicher, dass Ihre Website auf Desktop, Tablet und Mobilgeräten fehlerfrei aussieht und funktioniert. Ich verwende moderne Technologien und Best Practices, um schnelle, sichere und SEO-optimierte Websites bereitzustellen.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=3",              imageAlt: "Responsive-Entwicklung"
             },
             {
               id: 3,
-              tag: "Optimization",              title: "Performance & SEO",              subtitle: "Optimized for search engines and user engagement.",              description: "I optimize websites for speed, accessibility, and search engine visibility. Strategic SEO implementation ensures your site reaches the right audience and ranks well on search results."
+              tag: "Optimierung",              title: "Leistung & SEO",              subtitle: "Optimiert für Suchmaschinen und Benutzereinbindung.",              description: "Ich optimiere Websites auf Geschwindigkeit, Barrierefreiheit und Sichtbarkeit in Suchmaschinen. Die strategische SEO-Implementierung stellt sicher, dass Ihre Website die richtige Zielgruppe erreicht und bei Suchergebnissen gut rangiert."
             }
           ]}
         />
@@ -136,9 +136,9 @@ export default function LandingPage() {
 
       <div id="deployment" data-section="deployment">
         <FeatureCardNineteen
-          title="How to Deploy Your Site"
-          description="Multiple deployment options to get your website live quickly and reliably."
-          tag="Deployment Guide"
+          title="So stellen Sie Ihre Website bereit"
+          description="Mehrere Bereitstellungsoptionen, um Ihre Website schnell und zuverlässig online zu bringen."
+          tag="Bereitstellungsanleitung"
           tagIcon={Rocket}
           tagAnimation="slide-up"
           textboxLayout="default"
@@ -146,15 +146,15 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              tag: "Recommended",              title: "Deploy on Vercel",              subtitle: "Fastest way to deploy Next.js projects.",              description: "1. Push your code to GitHub\n2. Sign up at vercel.com\n3. Connect your repository\n4. Vercel auto-detects Next.js and deploys automatically\n5. Your site is live instantly with automatic SSL and CDN",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-modern-designer-s-workspace-with-a-cle-1772566667699-d70c5a04.png?_wi=2",              imageAlt: "Vercel deployment"
+              tag: "Empfohlen",              title: "Auf Vercel bereitstellen",              subtitle: "Der schnellste Weg, Next.js-Projekte bereitzustellen.",              description: "1. Schieben Sie Ihren Code zu GitHub\n2. Registrieren Sie sich auf vercel.com\n3. Verbinden Sie Ihr Repository\n4. Vercel erkennt Next.js automatisch und stellt bereit\n5. Ihre Website ist sofort online mit automatischem SSL und CDN",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-modern-designer-s-workspace-with-a-cle-1772566667699-d70c5a04.png?_wi=2",              imageAlt: "Vercel-Bereitstellung"
             },
             {
               id: 2,
-              tag: "Alternative",              title: "Deploy on Netlify",              subtitle: "Great alternative with easy GitHub integration.",              description: "1. Push code to GitHub\n2. Sign up at netlify.com\n3. Select 'New site from Git'\n4. Build command: npm run build\n5. Publish directory: .next/standalone\n6. Deploy and get your domain",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=3",              imageAlt: "Netlify deployment"
+              tag: "Alternative",              title: "Auf Netlify bereitstellen",              subtitle: "Großartige Alternative mit einfacher GitHub-Integration.",              description: "1. Schieben Sie Code zu GitHub\n2. Registrieren Sie sich auf netlify.com\n3. Wählen Sie 'Neue Website aus Git'\n4. Build-Befehl: npm run build\n5. Veröffentlichungsverzeichnis: .next/standalone\n6. Stellen Sie bereit und erhalten Sie Ihre Domain",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3ARjvloGcZpCaedVgrm6Muh5Upq/a-sleek-corporate-website-design-for-a-t-1772566668876-f9cb2e3c.png?_wi=3",              imageAlt: "Netlify-Bereitstellung"
             },
             {
               id: 3,
-              tag: "Self-Hosted",              title: "Deploy with Docker",              subtitle: "Deploy anywhere with containerization.",              description: "1. Create Dockerfile in project root\n2. Build image: docker build -t myapp .\n3. Run: docker run -p 3000:3000 myapp\n4. Push to Docker Hub\n5. Deploy to AWS ECS, Google Cloud, or DigitalOcean"
+              tag: "Selbst gehostet",              title: "Mit Docker bereitstellen",              subtitle: "Überall mit Containerisierung bereitstellen.",              description: "1. Erstellen Sie ein Dockerfile im Projektstammverzeichnis\n2. Image erstellen: docker build -t myapp .\n3. Ausführen: docker run -p 3000:3000 myapp\n4. Zu Docker Hub pushen\n5. Auf AWS ECS, Google Cloud oder DigitalOcean bereitstellen"
             }
           ]}
         />
@@ -162,14 +162,14 @@ export default function LandingPage() {
 
       <div id="contact" data-section="contact">
         <ContactCTA
-          tag="Let's Work Together"
+          tag="Lassen Sie uns zusammenarbeiten"
           tagIcon={Mail}
           tagAnimation="slide-up"
-          title="Ready to Elevate Your Online Presence?"
-          description="Let's collaborate to create a website that not only looks stunning but also drives results. I'm excited to bring your vision to life."
+          title="Bereit, Ihre Online-Präsenz zu verbessern?"
+          description="Lassen Sie uns zusammenarbeiten, um eine Website zu erstellen, die nicht nur atemberaubend aussieht, sondern auch Ergebnisse bringt. Ich freue mich, Ihre Vision zum Leben zu erwecken."
           buttons={[
-            { text: "Contact Me", href: "mailto:friisp@gmail.com" },
-            { text: "Call: +49 179 2355413", href: "tel:+49176611696541" }
+            { text: "Kontaktieren Sie mich", href: "mailto:friisp@gmail.com" },
+            { text: "Anrufen: +49 179 2355413", href: "tel:+49176611696541" }
           ]}
           buttonAnimation="slide-up"
           background={{ variant: "animated-grid" }}
@@ -183,22 +183,22 @@ export default function LandingPage() {
           columns={[
             {
               items: [
-                { label: "Work", href: "#portfolio" },
-                { label: "Services", href: "#services" },
-                { label: "Deployment", href: "#deployment" }
+                { label: "Arbeiten", href: "#portfolio" },
+                { label: "Dienstleistungen", href: "#services" },
+                { label: "Bereitstellung", href: "#deployment" }
               ]
             },
             {
               items: [
-                { label: "Email", href: "mailto:friisp@gmail.com" },
-                { label: "Phone", href: "tel:+49176611696541" },
+                { label: "E-Mail", href: "mailto:friisp@gmail.com" },
+                { label: "Telefon", href: "tel:+49176611696541" },
                 { label: "LinkedIn", href: "#" }
               ]
             },
             {
               items: [
-                { label: "Privacy Policy", href: "#" },
-                { label: "Terms of Service", href: "#" },
+                { label: "Datenschutzerklärung", href: "#" },
+                { label: "Nutzungsbedingungen", href: "#" },
                 { label: "Impressum", href: "#" }
               ]
             }
