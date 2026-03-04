@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Christian Friis - Web Designer",  description: "Professional web designer creating stunning digital experiences"
+  title: "Christian Friis - Web Designer",  description: "Professional web designer creating stunning digital experiences. Deploy your site easily with Next.js, Vercel, or any Node.js hosting platform."
 };
 
 export default function RootLayout({
@@ -16,6 +16,74 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script>
+          {`
+            window.deploymentGuide = {
+              platforms: [
+                {
+                  name: 'Vercel',
+                  steps: [
+                    '1. Push your code to GitHub',
+                    '2. Go to vercel.com and sign up',
+                    '3. Click "New Project" and select your repository',
+                    '4. Vercel auto-detects Next.js and deploys automatically',
+                    '5. Your site is live at vercel.app domain'
+                  ]
+                },
+                {
+                  name: 'Netlify',
+                  steps: [
+                    '1. Push your code to GitHub',
+                    '2. Go to netlify.com and sign up',
+                    '3. Click "New site from Git" and select your repository',
+                    '4. Set build command: npm run build',
+                    '5. Set publish directory: .next/standalone',
+                    '6. Deploy and get your live domain'
+                  ]
+                },
+                {
+                  name: 'Self-Hosted (Node.js)',
+                  steps: [
+                    '1. Get a server (Digital Ocean, AWS, etc)',
+                    '2. Clone your repository on the server',
+                    '3. Run: npm install && npm run build',
+                    '4. Set NODE_ENV=production',
+                    '5. Start with: npm start or use PM2',
+                    '6. Set up nginx/Apache as reverse proxy',
+                    '7. Configure your domain DNS'
+                  ]
+                },
+                {
+                  name: 'Docker Deployment',
+                  steps: [
+                    '1. Create a Dockerfile in your project root',
+                    '2. Build image: docker build -t myapp .',
+                    '3. Run container: docker run -p 3000:3000 myapp',
+                    '4. Push to Docker Hub or container registry',
+                    '5. Deploy to cloud platforms (AWS ECS, GCP, etc)'
+                  ]
+                }
+              ],
+              environmentVariables: [
+                'NODE_ENV=production',
+                'NEXT_PUBLIC_API_URL=your-api-url',
+                'DATABASE_URL=your-database-url'
+              ],
+              postDeploymentChecklist: [
+                'Test all navigation links',
+                'Verify responsive design on mobile',
+                'Check email forms work correctly',
+                'Confirm images load properly',
+                'Test contact forms submission',
+                'Verify SEO meta tags',
+                'Check page load performance',
+                'Set up SSL certificate (HTTPS)'
+              ]
+            };
+          `}
+        </script>
+      </head>
       <body className={inter.className}>{children}
         <script
           dangerouslySetInnerHTML={{
